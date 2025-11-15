@@ -30,4 +30,11 @@ The project utilizes a labeled dataset of facial images.
 
 The model was trained for a number of epochs until its performance on the validation set stabilized.
 
-The final, trained model was then evaluated on a holdout **test set** (data the model had never seen) to get a
+The final, trained model was then evaluated on a holdout **test set** (data the model had never seen) to get a final performance score. The primary metric used for this evaluation was **Mean Absolute Error (MAE)**, which measures the average number of years the model's prediction was off from the true age.
+
+The project concluded by comparing this final MAE score to the business-defined baseline to determine if the model was successful.
+
+## 5. Key Libraries and Tools
+* **TensorFlow & Keras:** For building, training, and evaluating the CNN.
+* **Pandas:** For loading and managing the age labels.
+* **Seaborn & Matplotlib:** For initial data exploration.
